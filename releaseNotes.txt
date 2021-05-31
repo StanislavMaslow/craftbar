@@ -1,0 +1,110 @@
+{
+"email": "user@gmail.com",
+"first_name": "Use",
+"last_name": "Slevin",
+"personal_id_number": "000000000", 
+"dob_day": "21",
+"dob_month": "01",
+"dob_year": "1990",
+"addr_line1": "Address",
+"addr_line2": "",
+"addr_city": "New York",
+"addr_postal_code": "10007",
+"addr_state": "Alaska"
+}
+
+Examples of add card: 
+{
+"card_number": 4000056655665556 or 5200828282828210
+"card_exp_month": "12",
+"card_exp_year": "22",
+"card_cvc": "123",
+"card_currency": "usd"
+}
+
+Release notes(04/13/2019).
+Version: 0.5.7
+
+Feature:
+1. Added take a photo functionality for "Add post screen";
+2. Restayled latest post screen. Added avatar of user that added some post;
+3. Added Help Center functionality (It opens webView of our site);
+4. Report a problem screen and functionality;
+5. Privacy policy screen;
+6. Terms of use screen;
+7. Added load more button and functionality for tips history;
+8. Added load more button and functionality for payouts hystory;
+9. Autocomplete with tags for "add people functionality" in addPostScreen;
+10. Push Notification (first release) "Home Screen Notifications";
+11. Resset pasword functionality;
+
+Fixes:
+1. When I click many times to withdraw funds appears a lot of popups. Button should be disabled after click to prevent queue.(fix)
+2. Fix styles AccountScreen
+3. New Autocomplete for add bars checkin;
+4. Made all loaders of the same color;
+5. Fixed scroll issue on notificaitons screen (ios);
+6. Solved issues with some notifications (put wright avatar, corected errors);
+7. Fixed labels padding on my account screen;
+8. Adjusted flash screen logo for different resolutions;
+
+Release notes(05/13/2019)
+Version: 0.5.8
+Feature:
+1. Availability box show were barkeep is available at the moment;
+2. Displaying names of tagged users in post;
+3. Edit existing rating of a barkeep;
+4. Changed process of bar role sign up. Bars don`t have first/lastname, only name.
+5. Bar can be found by its name;
+
+Fixes:
+1. Fixed "edit/remove comment" issue on large comments;
+2. Fixed issue with delete comments;
+3. Fixed tips notification to "You have been tipped!";
+4. Fixed wrong names in notification.
+5. Fixed typo in reset pasword screen;
+
+Release notes(06/07/2019)
+1. Set availability added one more input for "Date from";
+2. Fixed search for bars - screen shows only bar name.
+3. Changed tips post: displaying what barkeeper will receive. (Previously was entire amount with app fee - was not clear);
+4. Facebook login;
+5. Sign up with Facebook
+6. Can set availability in the bar that is not in the system;
+7. Fixed issue from edit username (account screen). Added popup with info.
+8. Added info about app version to settings screen.
+9. Fixed edit post with changing image.
+10. Fixed edit avatar issue.
+11. Fixed payment header screen.
+12. Fixed icons position in search screen.
+13. Fixed icons in "Followers" and "Followings" screen.
+14. Display current availability in barkeeper profile.
+15. Added footer to screen "Cards" list screen;
+16. Added ability to display minutes in availability hours picker;
+17. Fixed "posts with no image" styles;
+18. Visibility of Barkeep Profile of  https://trello.com/c/PpNrss20/43-visibility-of-barkeep-profile
+19. Unable to Search by actual Name of a Bar https://trello.com/c/neuE3HQs/44-unable-to-search-by-actual-name-of-a-bar
+20. Bar name field is too small https://trello.com/c/7ACZMxYa/47-bar-name-field-is-too-small
+21. Availability Expiration  https://trello.com/c/HyIFPFuQ/1-availability-expiration
+22. Visibility of "Latest Posts" works properly - as in description.
+23. Aligned content on center in my account screen;
+24. Added link to terms and condition in "Add card screen";
+25. Fixed errors in reset password email.
+
+Release notes(07/01/2019)
+1. Fixed missed bottom border issue in search input in Followers, Followings and Search screens;
+2. Avoid autocapitalisation in signup screen;
+3. Fixed bug with expired token and case when our app can take other application tokens as ours.
+4. Fixed autofocus on add availability screen.
+
+
+With regards to possible concerns about user-generated content, they are specifically addressed in section 6 of the The Crafty Barkeep Terms of Service ( http://www.thecraftybarkeep.com/the-fine-print/ ). The Crafty Barkeep takes lewd profile pictures seriously and has built robust business practices to address this issue. Users are able to report other users from within the app for any reason, and we are able to ban a user from the system or certain features as needed.
+
+The Crafty Barkeep addresses all objectionable content within 24 hours. ​
+
+ The Crafty Barkeep doesn't allow users to interact directly beyond accepting follow request. As such, there isn't a way for users to abuse one another if they don`t follow each other. Also, at any time following can be stopped. If a user reports some other abusive behavior, which is essentially impossible, our CA team will remove that user within 24 hours.
+
+
+20.10.19
+- load more for post comments;
+- network connection watcher;

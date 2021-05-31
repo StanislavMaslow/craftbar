@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "The Crafty Barkeep",
+    "description": "This project is really great.",
+    "slug": "CraftyBarKeep",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.8",
+    "orientation": "portrait",
+    "icon": "./icon.png",
+    "facebookScheme": "fb2143475049294532",
+    "facebookAppId": "2143475049294532",
+    "facebookDisplayName": "The Crafty Barkeep",
+    "splash": {
+      "image": "./assets/splash/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["assets/*"],
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "35",
+      "bundleIdentifier": "com.thecraftybar.keep",
+      "infoPlist": {
+        "NSCameraUsageDescription": "The Crafty Barkeep requires to access camera for taking profile or post picture.",
+        "NSPhotoLibraryUsageDescription": "The Crafty Barkeep requires to access photo library for taking profile or post picture."
+      },
+      "splash": {
+        "image": "./assets/splash/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#fff"
+      }
+    },
+    "android": {
+      "package": "com.thecraftybar.keep",
+      "versionCode": 35,
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "splash": {
+        "backgroundColor": "#fff",
+        "resizeMode": "contain",
+        "mdpi": "./assets/splash/mdpi.png",
+        "hdpi": "./assets/splash/hdpi.png",
+        "xhdpi": "./assets/splash/xhdpi.png",
+        "xxhdpi": "./assets/splash/xxhdpi.png",
+        "xxxhdpi": "./assets/splash/xxxhdpi.png"
+      }
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#000000",
+      "barStyle": "light-content"
+    },
+    "notification": {
+      "icon": "./iconPushNotification.png",
+      "color": "#666666",
+      "iosDisplayInForeground": true,
+      "androidMode": "default"
+    }
+  }
+}

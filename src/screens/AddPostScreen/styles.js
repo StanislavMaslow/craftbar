@@ -1,0 +1,245 @@
+import { Dimensions } from 'react-native';
+import { paleGrey, greyText } from '../../utils/variables';
+
+const deviceWidth = Dimensions.get('window').width;
+
+export default {
+  container: {
+    width: deviceWidth,
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  containerEx: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
+  },
+  exampleText: {
+    fontSize: 20,
+    marginBottom: 20,
+    marginHorizontal: 15,
+    textAlign: 'center',
+  },
+  maybeRenderUploading: {
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    justifyContent: 'center',
+  },
+  maybeRenderContainer: {
+    borderRadius: 3,
+    elevation: 2,
+    marginTop: 30,
+    shadowColor: 'rgba(0,0,0,1)',
+    shadowOpacity: 0.2,
+    shadowOffset: {
+      height: 4,
+      width: 4,
+    },
+    shadowRadius: 5,
+    width: 250,
+  },
+  maybeRenderImageContainer: {
+    borderTopLeftRadius: 3,
+    borderTopRightRadius: 3,
+    borderColor: null,
+    overflow: 'hidden',
+  },
+  maybeRenderImage: {
+    height: 60,
+    width: 100,
+  },
+  maybeRenderImageText: {
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+  },
+
+  column: {
+    flex: 1,
+    flexShrink: 0,
+    flexDirection: 'column',
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    minWidth: 300,
+  },
+
+  addPhotoContainer: {
+    backgroundColor: paleGrey,
+    flexDirection: 'row',
+    alignSelf: 'flex-start',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    width: '100%',
+    height: 60,
+    paddingLeft: 35,
+    paddingRight: 34,
+  },
+  imageContainer: {
+    backgroundColor: paleGrey,
+    borderRadius: 4,
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 15,
+    // borderColor: '#000',
+    // borderWidth: 1,
+  },
+  addPhotoButton: {
+    minWidth: '40%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addPhotoButtonText: {
+    fontWeight: '600',
+    fontSize: 18,
+  },
+  pickedPhoto: {
+    borderColor: 'red',
+    borderWidth: 2,
+    width: '100%',
+  },
+  blackTitle: {
+    color: '#000',
+    fontSize: 36,
+    height: 40,
+    alignItems: 'flex-end',
+    alignContent: 'flex-end',
+    paddingTop: 13,
+  },
+
+  section: {
+    paddingBottom: 20,
+  },
+
+  inputSection: {
+    marginTop: -10,
+    flexDirection: 'column',
+    alignSelf: 'center',
+    paddingLeft: 35,
+    paddingRight: 34,
+  },
+
+  inputContainer: {
+    flexDirection: 'row',
+    // justifyContent: 'center',
+    alignItems: 'flex-start',
+    position: 'relative',
+    marginBottom: 0,
+    paddingBottom: 0,
+    // marginLeft: 30,
+  },
+
+  input: {
+    flex: 1,
+    alignSelf: 'center',
+    paddingTop: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    fontSize: 18,
+    marginTop: 5,
+    marginBottom: 0,
+    marginLeft: 0,
+    marginRight: 18,
+  },
+  inputBorderBottom: {
+    position: 'absolute',
+    height: 1,
+    bottom: 0.5,
+    width: '100%',
+    borderBottomColor: '#000',
+    borderBottomWidth: 1.5,
+    left: '4%',
+  },
+  selectPicker: {
+    flex: 1,
+    alignSelf: 'flex-start',
+    width: 100,
+    marginTop: 29,
+    marginBottom: -10,
+    marginLeft: '2%',
+    marginRight: 18,
+    // borderColor: 'red',
+    // borderWidth: 1,
+  },
+  button: {
+    marginTop: 42,
+    marginBottom: 5,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    backgroundColor: '#000',
+    borderRadius: 5,
+    height: 50,
+    width: 255,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+
+  connectButton: {
+    marginTop: 20,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    backgroundColor: paleGrey,
+    borderRadius: 5,
+    height: 50,
+    width: 255,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  link: {
+    flex: 1,
+    fontFamily: 'OpenSans',
+    marginTop: 40,
+    flexDirection: 'row',
+    textAlign: 'left',
+    color: '#000',
+    fontSize: 15,
+    fontWeight: 'normal',
+  },
+  shareOnMediaContainer: {
+    marginTop: 30,
+    // flexDirection: 'column',
+    // alignSelf: 'center',
+    // paddingLeft: 35,
+    // paddingRight: 34,
+    // alignItems: 'flex-start',
+  },
+  socialIconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 12,
+    paddingBottom: 10,
+    marginBottom: 36,
+  },
+
+  socialButton: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 0,
+    marginTop: 30,
+    marginLeft: 12,
+    backgroundColor: paleGrey,
+  },
+
+  socialButtonText: {
+    color: '#000',
+    fontFamily: 'OpenSansBold',
+  },
+  socialIcon: {
+    padding: 10,
+    // position: 'absolute',
+    color: greyText,
+    marginLeft: 4,
+  },
+  socialIconsBlock: {
+    backgroundColor: paleGrey,
+    height: 60,
+    width: '28%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+};

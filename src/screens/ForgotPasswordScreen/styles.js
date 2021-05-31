@@ -1,0 +1,157 @@
+import { Dimensions } from 'react-native';
+import { paleGrey, greyText } from '../../utils/variables';
+
+const deviceWidth = Dimensions.get('window').width;
+
+export default {
+  container: {
+    width: deviceWidth,
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  column: {
+    flex: 1,
+    flexShrink: 0,
+    flexDirection: 'column',
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    minWidth: 300,
+  },
+  header: {
+    backgroundColor: 'rgb(236, 237, 241)',
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: deviceWidth,
+    height: 100,
+    maxHeight: 230,
+  },
+  image: {
+    borderColor: 'red',
+    alignSelf: 'center',
+  },
+  title: {
+    marginTop: 5,
+    fontFamily: 'Dancing',
+    color: '#8D8E90',
+    alignSelf: 'center',
+    textAlign: 'center',
+    fontSize: 20,
+    lineHeight: 25,
+    fontWeight: 'normal',
+  },
+  blackTitle: {
+    color: '#000',
+    fontSize: 36,
+    height: 40,
+    alignItems: 'flex-end',
+    alignContent: 'flex-end',
+    paddingTop: 13,
+  },
+
+  section: {
+    marginTop: 41,
+    paddingBottom: 20,
+  },
+
+  inputSection: {
+    marginTop: 25,
+    flexDirection: 'column',
+    alignSelf: 'center',
+    alignItems: 'flex-start',
+  },
+
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-start',
+    position: 'relative',
+    marginBottom: 0,
+    paddingBottom: 0,
+    marginLeft: 30,
+  },
+
+  input: {
+    flex: 1,
+    alignSelf: 'center',
+    paddingTop: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    fontSize: 18,
+    marginTop: 5,
+    marginBottom: 0,
+    marginLeft: 0,
+    marginRight: 18,
+  },
+  inputFocus: {
+    borderBottomColor: '#000',
+    borderBottomWidth: 2,
+  },
+  inputBorderBottom: {
+    position: 'absolute',
+    height: 1,
+    bottom: 0.5,
+    width: '100%',
+    borderBottomColor: '#000',
+    borderBottomWidth: 1.5,
+    left: '4%',
+  },
+  icon: {
+    position: 'absolute',
+    top: 30,
+    right: 18,
+    paddingTop: 1,
+    color: greyText,
+    height: 35,
+  },
+  button: {
+    marginTop: 42,
+    marginBottom: 5,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    backgroundColor: '#000',
+    borderRadius: 5,
+    height: 50,
+    width: 255,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  loginButtonText: {
+    flex: 1,
+    textAlign: 'center',
+    fontFamily: 'OpenSans',
+  },
+  connectButton: {
+    marginTop: 41,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    backgroundColor: paleGrey,
+    borderRadius: 5,
+    height: 50,
+    width: 255,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+
+  textContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    // justifyContent: 'flex-end',
+    justifyContent: 'center',
+    marginTop: 30,
+  },
+  text: {
+    flex: 1,
+    fontFamily: 'OpenSans',
+    flexDirection: 'row',
+    // textAlign: 'left',
+    textAlign: 'center',
+    color: '#000',
+    fontSize: 15,
+    fontWeight: 'normal',
+  },
+};
